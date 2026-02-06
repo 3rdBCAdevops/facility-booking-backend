@@ -23,8 +23,8 @@ public class CorsConfig {
                                 "https://facility-booking-frontend.vercel.app"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                        .allowedHeaders("*")
-                        .allowCredentials(true);
+                        .allowedHeaders("*");
+                        // ❌ removed allowCredentials
             }
         };
     }
