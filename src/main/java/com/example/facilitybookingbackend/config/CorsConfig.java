@@ -1,4 +1,4 @@
-package com.example.facilitybookingbackend;  
+package com.example.facilitybookingbackend.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,9 +22,9 @@ public class CorsConfig {
                                 "http://localhost:3000",
                                 "https://facility-booking-frontend.vercel.app"
                         )
-                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS")
                         .allowedHeaders("*")
-                        .allowCredentials(true);
+                        .allowCredentials(true)
             }
         };
     }
