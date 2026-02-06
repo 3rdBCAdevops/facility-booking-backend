@@ -1,10 +1,3 @@
-package com.example.facilitybookingbackend.config;
-
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-
 @Configuration
 public class CorsConfig {
 
@@ -23,7 +16,7 @@ public class CorsConfig {
                                 "https://facility-booking-frontend.vercel.app",
                                 "https://facility-booking-frontend-nu2fqkhgo-asika-ms-projects.vercel.app"
                         )
-                        .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS")
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
             }
