@@ -8,9 +8,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/bookings")
-@CrossOrigin(origins = "*")
-
-
 public class BookingController {
 
     private final BookingService bookingService;
@@ -56,4 +53,3 @@ public class BookingController {
         return "Booking deleted successfully";
     }
 }
-// Facility Booking Backend - Version 1
