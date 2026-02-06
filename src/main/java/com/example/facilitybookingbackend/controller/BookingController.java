@@ -8,10 +8,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/bookings")
-@CrossOrigin(origins = {
-        "http://localhost:3000",
-        "https://facility-booking-frontend.vercel.app"
-})
+@CrossOrigin(origins = "*")
+
 
 public class BookingController {
 
