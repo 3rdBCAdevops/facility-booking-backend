@@ -23,7 +23,7 @@ public class CorsConfig {
                                 "https://facility-booking-frontend.vercel.app",
                                 "https://facility-booking-frontend-nu2fqkhgo-asika-ms-projects.vercel.app"
                         )
-                        .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS")
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
             }
