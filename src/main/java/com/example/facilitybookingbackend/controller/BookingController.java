@@ -16,15 +16,12 @@ import java.util.List;
                 "https://facility-booking-frontend-hrrdwo8s9-asika-ms-projects.vercel.app"
         },
         allowedHeaders = "*",
-        exposedHeaders = "*",
         methods = {
                 RequestMethod.GET,
                 RequestMethod.POST,
                 RequestMethod.PUT,
-                RequestMethod.DELETE,
-                RequestMethod.OPTIONS
-        },
-        allowCredentials = "true"
+                RequestMethod.DELETE
+        }
 )
 public class BookingController {
 
@@ -69,11 +66,5 @@ public class BookingController {
     public String deleteBooking(@PathVariable Long id) {
         bookingService.deleteBooking(id);
         return "Booking deleted successfully";
-    }
-
-    // IMPORTANT: Handle preflight explicitly (extra safety)
-    @RequestMapping(method = RequestMethod.OPTIONS)
-    public void handleOptions() {
-        // no body needed
     }
 }
