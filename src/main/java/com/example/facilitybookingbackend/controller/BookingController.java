@@ -8,6 +8,22 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/bookings")
+@CrossOrigin(
+        origins = {
+                "http://localhost:3000",
+                "http://localhost:5173",
+                "https://facility-booking-frontend.vercel.app",
+                "https://facility-booking-frontend-hrrdwo8s9-asika-ms-projects.vercel.app"
+        },
+        allowedHeaders = "*",
+        methods = {
+                RequestMethod.GET,
+                RequestMethod.POST,
+                RequestMethod.PUT,
+                RequestMethod.DELETE,
+                RequestMethod.OPTIONS
+        }
+)
 public class BookingController {
 
     private final BookingService bookingService;
