@@ -1,4 +1,4 @@
-package com.example.facilitybookingbackend;  
+package com.example.facilitybookingbackend.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
