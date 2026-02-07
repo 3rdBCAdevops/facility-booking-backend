@@ -15,7 +15,7 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
                         .allowedOrigins(
-                            "http://localhost:3000", // for local dev
+                            
                             "https://facility-booking-frontend-e2peeyo1h-asika-ms-projects.vercel.app", // Vercel
                             "https://asika-facility-booking-frontend.vercel.app"
                         )
