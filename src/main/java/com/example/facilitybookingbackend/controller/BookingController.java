@@ -11,6 +11,7 @@ import java.util.List;
 @CrossOrigin(
     origins = {
         "https://facility-booking-frontend.vercel.app",
+        "https://asika-facility-booking-frontend.vercel.app",
         "https://facility-booking-frontend-git-main-asika-ms-projects.vercel.app"
     }
 )
