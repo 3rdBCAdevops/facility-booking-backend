@@ -14,6 +14,7 @@ import java.util.List;
                 "http://localhost:5173",
                 "https://facility-booking-frontend.vercel.app",
                 "https://facility-booking-frontend-hrrdwo8s9-asika-ms-projects.vercel.app"
+                "https://asika-facility-booking-frontend.vercel.app"
         },
         allowedHeaders = "*",
         methods = {
