@@ -10,10 +10,7 @@ import java.util.List;
 @RequestMapping("/api/bookings")
 @CrossOrigin(
         origins = {
-                "http://localhost:3000",
-                "http://localhost:5173",
-                "https://facility-booking-frontend.vercel.app",
-                "https://facility-booking-frontend-hrrdwo8s9-asika-ms-projects.vercel.app",
+                "https://facility-booking-frontend-git-main-asika-ms-projects.vercel.app",
                 "https://asika-facility-booking-frontend.vercel.app"
         },
         allowedHeaders = "*",
@@ -21,7 +18,8 @@ import java.util.List;
                 RequestMethod.GET,
                 RequestMethod.POST,
                 RequestMethod.PUT,
-                RequestMethod.DELETE
+                RequestMethod.DELETE,
+                RequestMethod.OPTIONS
         }
 )
 public class BookingController {
