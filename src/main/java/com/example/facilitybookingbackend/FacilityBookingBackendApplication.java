@@ -27,6 +27,7 @@ public class FacilityBookingBackendApplication {
                                 "http://localhost:5173",
                                 "https://facility-booking-frontend.vercel.app",
                                 "https://facility-booking-frontend-9wsfa69n2-asika-ms-projects.vercel.app"
+                                "https://asika-facility-booking-frontend.vercel.app"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
