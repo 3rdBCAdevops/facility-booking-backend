@@ -1,24 +1,19 @@
-package com.example.facilitybookingbackend;
+package com.example.facilitybookingbackend.config;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-@SpringBootApplication
-public class FacilityBookingBackendApplication {
-
-    public static void main(String[] args) {
-        SpringApplication.run(FacilityBookingBackendApplication.class, args);
-    }
+@Configuration
+public class CorsConfig {
 
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**")
+                registry.addMapping("/**")  // Allow all paths
                         .allowedOrigins(
                                 "http://localhost:3000",
                                 "http://localhost:5173",
@@ -26,8 +21,8 @@ public class FacilityBookingBackendApplication {
                                 "https://facility-booking-frontend-9wsfa69n2-asika-ms-projects.vercel.app",
                                 "https://asika-facility-booking-frontend.vercel.app"
                         )
-                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                        .allowedHeaders("*");
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")  // Allow these HTTP methods
+                        .allowedHeaders("*");  // Allow all headers
             }
         };
     }
