@@ -15,13 +15,12 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
                         .allowedOrigins(
-                            "http://localhost:3000", // for local dev
-                            "https://facility-booking-frontend-e2peeyo1h-asika-ms-projects.vercel.app", // Vercel
-                            "https://asika-facility-booking-frontend.vercel.app"
+                                "https://facility-booking-frontend-git-main-asika-ms-projects.vercel.app",
+                                "https://asika-facility-booking-frontend.vercel.app"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
-                        .allowCredentials(true);
+                        .allowCredentials(true); // if your frontend uses cookies/auth
             }
         };
     }
