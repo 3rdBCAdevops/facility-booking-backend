@@ -18,11 +18,11 @@ public class FacilityBookingBackendApplication {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/**")  // applies only to API endpoints
-                        .allowedOrigins("*")   // allow all frontend URLs (main + previews)
+                registry.addMapping("/api/**")
+                        .allowedOriginPatterns("*") // ✅ FIX HERE
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
-                        .allowCredentials(true);  // required if you use cookies/auth
+                        .allowCredentials(true);
             }
         };
     }
