@@ -18,14 +18,11 @@ public class FacilityBookingBackendApplication {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/**")  // only API endpoints
-                        .allowedOrigins(
-                                "https://facility-booking-frontend-git-main-asika-ms-projects.vercel.app",
-                                "https://asika-facility-booking-frontend.vercel.app"
-                        )
+                registry.addMapping("/api/**")  // applies only to API endpoints
+                        .allowedOrigins("*")   // allow all frontend URLs (main + previews)
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
-                        .allowCredentials(true);  // needed for auth/cookies
+                        .allowCredentials(true);  // required if you use cookies/auth
             }
         };
     }
