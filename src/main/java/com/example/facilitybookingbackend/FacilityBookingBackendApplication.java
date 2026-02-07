@@ -14,16 +14,17 @@ public class FacilityBookingBackendApplication {
     }
 
     @Bean
-    public WebMvcConfigurer corsConfigurer() {
-        return new WebMvcConfigurer() {
-            @Override
-            public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/**")
-                        .allowedOriginPatterns("*") // ✅ FIX HERE
-                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                        .allowedHeaders("*")
-                        .allowCredentials(true);
-            }
-        };
-    }
+public WebMvcConfigurer corsConfigurer() {
+    return new WebMvcConfigurer() {
+        @Override
+        public void addCorsMappings(CorsRegistry registry) {
+            registry.addMapping("/api/**")
+                .allowedOriginPatterns("*") // ✅ NOT allowedOrigins
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                .allowedHeaders("*")
+                .allowCredentials(true);
+        }
+    };
+}
+
 }
