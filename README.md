@@ -30,5 +30,9 @@ logic and communicates with the frontend through HTTP APIs.
 - Code reviewed and merged to master
 - Branch protection enabled
 
+## Presentation
+
+[Download Project PPT]_(https://github.com/asikanasar/facility-booking-backend/blob/master/facility_booking.pptx)
+
 ## Author
 Asika M
