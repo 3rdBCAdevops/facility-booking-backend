@@ -15,18 +15,16 @@ public class FacilityBookingBackendApplication {
 
     @Bean
     public WebMvcConfigurer corsConfigurer() {
-
         return new WebMvcConfigurer() {
-
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-
                 registry.addMapping("/**")
                         .allowedOrigins(
                                 "http://localhost:3000",
                                 "http://localhost:5173",
                                 "https://facility-booking-frontend.vercel.app",
-                                "https://facility-booking-frontend-9wsfa69n2-asika-ms-projects.vercel.app"
+                                "https://facility-booking-frontend-9wsfa69n2-asika-ms-projects.vercel.app",
+                                "https://asika-facility-booking-frontend.vercel.app"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
