@@ -1,4 +1,3 @@
-[Sonarqube.docx](https://github.com/user-attachments/files/25151639/Sonarqube.docx)
 # Facility Booking and Management System – Backend
 
 ## Project Summary
@@ -30,9 +29,16 @@ logic and communicates with the frontend through HTTP APIs.
 - Code reviewed and merged to master
 - Branch protection enabled
 
+## Sonarqube
+
+  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/517d2356-fd64-4a7e-a7b0-caf78b216143" />
+
+
+
 ## Presentation
 
-[Download Project PPT]_(https://github.com/asikanasar/facility-booking-backend/blob/master/facility_booking.pptx)
+[Facility-Booking-Management-System.pptx](https://github.com/user-attachments/files/25183490/Facility-Booking-Management-System.pptx)
+
 
 ## Author
 Asika M
