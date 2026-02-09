@@ -33,6 +33,9 @@ logic and communicates with the frontend through HTTP APIs.
 
   <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/517d2356-fd64-4a7e-a7b0-caf78b216143" />
 
+## Docker 
+
+![IMG-20260209-WA0003](https://github.com/user-attachments/assets/5c904bda-b0c4-4c63-9590-0a0a210e556a)
 
 
 ## Presentation
