@@ -1,13 +1,34 @@
 package com.example.facilitybookingbackend;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-@SpringBootTest
-class FacilityBookingBackendApplicationTests {
+@SpringBootApplication
+public class FacilityBookingBackendApplication {
 
-    @Test
-    void contextLoads() {
+    public static void main(String[] args) {
+        SpringApplication.run(FacilityBookingBackendApplication.class, args);
     }
 
+    @Bean
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurer() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/**")
+                        .allowedOrigins(
+                                "http://localhost:3000",
+                                "http://localhost:5173",
+                                "https://facility-booking-frontend.vercel.app",
+                                "https://facility-booking-frontend-9wsfa69n2-asika-ms-projects.vercel.app",
+                                "https://asika-facility-booking-frontend.vercel.app"
+                        )
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                        .allowedHeaders("*");
+            }
+        };
+    }
 }
